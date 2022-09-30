@@ -4,8 +4,9 @@ Dataset: [https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attriti
 
 
 ## Code and Resources Used 
-**Python Version:** 3.9.12
-**Packages:** pandas 
+**Python Version:** 3.9.12 <br>
+**Packages:** pandas <br>
+**Articles:** [Anova and Regression Equivalence](https://web.pdx.edu/~newsomj/mvclass/ho_anova%20and%20regression.pdf)
 
 
 

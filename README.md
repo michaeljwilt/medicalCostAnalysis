@@ -1,4 +1,4 @@
-<img style="display: inline; margin: 0 5px;" title="Feature Importance" src="img/medical1.png" alt="" width="1000" height="500"/>
+<img style="display: inline; margin: 0 5px;" title="Project Header" src="img/medical1.png" alt="" width="1000" height="500"/>
 
 # Medical Cost Predictive Analysis
 
@@ -50,7 +50,7 @@ For each of the variables above, they were continuous data. I changed them for 2
      have a significant impact charges and not bias our modeling
      
 Here is the correlation matrix:
-<img style="display: inline; margin: 0 5px;" title="Feature Importance" src="img/corrMatrix.png" alt="" width="800" height="300"/>
+<img style="display: inline; margin: 0 5px;" title="Correlation Matrix" src="img/corrMatrix.png" alt="" width="800" height="300"/>
 
 
 

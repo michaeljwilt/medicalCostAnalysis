@@ -10,7 +10,7 @@ Dataset: [https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attriti
 
 
 
-## Data Exploration
+## Data Wrangling
 I initially looked at our basic column structures, stats for each column (min, max, stdev, etc...), and the null values.
 The best part of this dataset is there are no null values!
 
@@ -31,9 +31,67 @@ For each of the variables above, they were continuous data. I changed them for 2
 * I created and exported the following for statistical modeling and visualization:
     * Dropped the original BMI, Age and Region columns for the statistical modeling dataset
     * Created another dataframe dropping our newly recoded columns
-    * Exported both dataframes separately for each use case:
-      * insurance2 is for statistical modeling
-      * insurance3 is for data visualization
+    * Exported both dataframes separately for each use case
+
+
+## Data Exploration
+
+1. Data Wrangling
+   - I did not initially recode sex or smoker columns from string to integer data, so I used dummy code
+
+2. Looked at Histograms to get a general idea of the shape of our data
+   - The data all appears to be shaped as normal distributions with some minor skewing
+
+3. Built a correlation matrix to view correlation between all of the variables
+   * Being a smoker seems to have a high correlation in the charges for individuals
+   * We will not include the smoker variables in our Statistical Analysis to ensure the other variables 
+     have a significant impact charges and not bias our modeling
+     
+<!--  Here is the correlation matrix:
+ <img style="display: inline; margin: 0 5px;" title="Feature Importance" src="https://github.com/michaeljwilt/employeeAttritionML/blob/main/Images/Features%20Graph.png" alt="" width="800" height="500" /> --> -->
+
+
+
+
+## Statistical Modeling
+**Tasks:**
+
+1. Assumption Testing
+   - We passed the assumption of Normality, Sample Size and Independence
+   - We had 2 variables that violated the assumption of homogeneity of variance
+      * BMI
+      * Sex
+   * We will run two different anovas to account for the violation that occurred
+
+2. Anova
+   - In our first Anova we looked at the impact of age and children on charges
+      * Age and Children do have a significant impact on the medical charges
+   - In our second Anova we corrected for the violation above and looked at the impact of BMI and Sex on charges
+      * BMI has a significant impact on medical charges
+      * Sex does not have a significant impact by itself
+      * We would not move forward with sex, however, it does have a significant effect on BMI, 
+         so we should include it in our analysis moving forward
+
+
+3. Post Hoc Evaluation
+   During our post hoc eval, we find that all of our variables carry a significant impact on the difference in charges.
+   
+   - Age
+      * From one category to the next, there is not a significant difference in charges,
+        but when you skip from one category to the one after you see a significant difference in charges.
+        However, once you go from 50s-60s, there is a significant difference in charges
+        
+   - Children & Sex
+      * Both carry significant impact on charges, but no further evals can be made at this time due its dummy coded nature
+   
+   - BMI
+      * There is no significance in charges until we cross the obesity threshold.
+        Once we pass into obesity there is a significance in charges difference until we go from obesity to severe obesity
+        
+   - Post Hoc Conclusion
+      * 1. Individually all of our variables have significant impact on charges.
+      * 2. Through our post hoc testing, we have a glimpse into how our ML Model can predict charges between different variable categories
+      * 3. We will proceed with our model building with all current variables
 
 
 ## Model Building 

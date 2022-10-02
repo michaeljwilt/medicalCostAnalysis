@@ -1,3 +1,5 @@
+<img style="display: inline; margin: 0 5px;" title="Feature Importance" src="img/medical1.png" alt="" width="1000" height="500"/>
+
 # Medical Cost Predictive Analysis
 
 Dataset: [https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset](https://www.kaggle.com/datasets/mirichoi0218/insurance) <br>

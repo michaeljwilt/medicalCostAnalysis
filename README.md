@@ -47,8 +47,8 @@ For each of the variables above, they were continuous data. I changed them for 2
    * We will not include the smoker variables in our Statistical Analysis to ensure the other variables 
      have a significant impact charges and not bias our modeling
      
-<!--  Here is the correlation matrix:
- <img style="display: inline; margin: 0 5px;" title="Feature Importance" src="https://github.com/michaeljwilt/employeeAttritionML/blob/main/Images/Features%20Graph.png" alt="" width="800" height="500" /> --> -->
+Here is the correlation matrix:
+<img style="display: inline; margin: 0 5px;" title="Feature Importance" src="img/corrMatrix.png" alt="" width="800" height="300"/>
 
 
 
@@ -125,10 +125,6 @@ Here is the model I tested
       * OverTime<br> -->
       
 
-      
-      
-<!-- Here you can see a graph of the features importance from least to greatest:
-
-<img style="display: inline; margin: 0 5px;" title="Feature Importance" src="https://github.com/michaeljwilt/employeeAttritionML/blob/main/Images/Features%20Graph.png" alt="" width="800" height="500" /> -->
+     
 
 

@@ -99,22 +99,27 @@ Here is the correlation matrix:
 
 
 ## Model Building 
-<!-- 
-First, I transformed the categorical variables into dummy variables. I also split the data into train and tests sets with a test size of 40%.   
+
+First I trnasformed our categorical variables into separate dummy code then performed train test split using a 30% training size.  
 
 I tried three different models and evaluated them using Mean Absolute Error. I chose MAE because it is relatively easy to interpret and outliers aren’t particularly bad in for this type of model.   
 
-I attempted one model and evaluated the fit for the data. With an 82% accuracy, we have a pretty decent build. However, I will explore further models builds through Lasso Regression and Multiple Linear Regression
-
-Here is the model I tested
-*	**Random Forest** – with the sparsity associated with the data, I thought that this would be a good fit. -->
+I tried three different models:
+*	**Multiple Linear Regression** – Baseline for the model
+*	**Lasso Regression** – Because of the sparse data from the many categorical variables, I thought a normalized regression like lasso would be effective.
+*	**Random Forest** – Again, with the sparsity associated with the data, I thought that this would be a good fit.
 
 ## Model performance
-<!-- The Random Forest model performed well and was able to predict employee attrition with 82% accuracy.
-*We performed Hyperparameter tuning to enahnce and build the best possible model. The following parameters gave us the best model.
-     * Number of Estimators = 50
-     * Minimum Samples Leaf = 1
-     * Max Depth = 30 -->
+The Random Forest model far outperformed the other approaches on the test and validation sets. 
+*	**Random Forest** : MAE = 4228.76
+*	**Linear Regression**: MAE = 4229.95
+*	**Ridge Regression**: MAE = 2539.47
+
+These numbers may seem high but in regards to medical charges, they are within normal limits. Our Random Forest model far exceeded our other 2 models which is why we will proceed with it into production.
+
+
+
+## Production/Deployment 
      
      
 ## Conclusions

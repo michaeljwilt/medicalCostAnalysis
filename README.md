@@ -2,7 +2,7 @@
 
 # Medical Cost Predictive Analysis
 
-Dataset: [https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset](https://www.kaggle.com/datasets/mirichoi0218/insurance) <br>
+Dataset: [https://www.kaggle.com/datasets/mirichoi0218/insurance](https://www.kaggle.com/datasets/mirichoi0218/insurance) <br>
 
 
 ## Code and Resources Used 
@@ -10,7 +10,10 @@ Dataset: [https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attriti
 **Packages:** pandas, numpy <br>
 **R Version:** 4.1.3 <br>
 **Packages:** dplyr, rcompanion, car, ggplot2, IDPmisc, readr <br>
-**Articles:** [Anova and Regression Equivalence](https://web.pdx.edu/~newsomj/mvclass/ho_anova%20and%20regression.pdf)
+**Articles:** 
+   - [Anova and Regression Equivalence](https://web.pdx.edu/~newsomj/mvclass/ho_anova%20and%20regression.pdf)
+   - [Scikit-Learn Model Selection](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html)
+   - [Ken Jee Model Building Project](https://www.youtube.com/watch?v=7O4dpR9QMIM&list=PL2zq7klxX5ASFejJj80ob9ZAnBHdz5O1t&index=5)
 
 
 

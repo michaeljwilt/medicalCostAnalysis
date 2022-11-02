@@ -1,8 +1,20 @@
 <img style="display: inline; margin: 0 5px;" title="Project Header" src="img/medical1.png" alt="" width="1000" height="500"/>
 
 # Medical Cost Predictive Analysis
+[Final Presentation](https://docs.google.com/presentation/d/12uawGBZTGBNoSNcc3PSO-cyUPD0Smk90vMYLls_gFls/edit?usp=sharing)
 
-Dataset: [https://www.kaggle.com/datasets/mirichoi0218/insurance](https://www.kaggle.com/datasets/mirichoi0218/insurance) <br>
+[Dataset](https://www.kaggle.com/datasets/mirichoi0218/insurance](https://www.kaggle.com/datasets/mirichoi0218/insurance)) <br>
+
+
+## Summary
+* **$17,755,825** the total cost we looked with our sample of **1338** customer
+* **$13, 270.42** is the average cost per member
+* Our findings:
+   * Smoking increases costs exponentially by ~ **$14,000** on average
+
+   * Age & BMI increases but not as significantly by ~ **$2,000 - $3000** on average
+
+   * Number of Children increases minimally by ~ **$600** on average
 
 
 ## Code and Resources Used 
@@ -14,16 +26,6 @@ Dataset: [https://www.kaggle.com/datasets/mirichoi0218/insurance](https://www.ka
    - [Anova and Regression Equivalence](https://web.pdx.edu/~newsomj/mvclass/ho_anova%20and%20regression.pdf)
    - [Scikit-Learn Model Selection](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html)
    - [Ken Jee Model Building Project](https://www.youtube.com/watch?v=7O4dpR9QMIM&list=PL2zq7klxX5ASFejJj80ob9ZAnBHdz5O1t&index=5)
-   
-## Summary
-* **$17,755,825** the total cost we looked with our sample of **1338** customer
-* **$13, 270.42** is the average cost per member
-* Our findings:
-   * Smoking increases costs exponentially by ~ **$14,000** on average
-
-   * Age & BMI increases but not as significantly by ~ **$2,000 - $3000** on average
-
-   * Number of Children increases minimally by ~ **$600** on average
 
 
 

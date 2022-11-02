@@ -14,6 +14,17 @@ Dataset: [https://www.kaggle.com/datasets/mirichoi0218/insurance](https://www.ka
    - [Anova and Regression Equivalence](https://web.pdx.edu/~newsomj/mvclass/ho_anova%20and%20regression.pdf)
    - [Scikit-Learn Model Selection](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html)
    - [Ken Jee Model Building Project](https://www.youtube.com/watch?v=7O4dpR9QMIM&list=PL2zq7klxX5ASFejJj80ob9ZAnBHdz5O1t&index=5)
+   
+## Summary
+* **$17,755,825** the total cost we looked with our sample of **1338** customer
+* **$13, 270.42** is the average cost per member
+* Our findings:
+   * Smoking increases costs exponentially by ~ **$14,000** on average
+
+   * Age & BMI increases but not as significantly by ~ **$2,000 - $3000** on average
+
+   * Number of Children increases minimally by ~ **$600** on average
+
 
 
 
@@ -114,27 +125,30 @@ I tried three different models:
 
 ## Model performance
 The Random Forest model far outperformed the other approaches on the test and validation sets. 
-*	**Random Forest** : MAE = 4228.76
-*	**Linear Regression**: MAE = 4229.95
-*	**Ridge Regression**: MAE = 2539.47
+*	**Linear Regression** : MAE = 4228.76
+*	**Ridge Regression**: MAE = 4229.95
+*	**Random Forest **: MAE = 2539.47
 
 These numbers may seem high but in regards to medical charges, they are within normal limits. Our Random Forest model far exceeded our other 2 models which is why we will proceed with it into production.
 
 
 
 ## Production/Deployment 
+
+Streamlit was the tool used for the model deployment. There are issues with the python environment being used, so the model is not fully functional as a website.
+
+
      
      
 ## Conclusions
-<!-- * We can predict, with our model, whether an employee will stay with 84% accuracy
-* The best predictors of whether someone will stay are in descending order: <br>
-      * Monthly Income <br>
-      * Age<br>
-      * Total Working Years<br>
-      * Hourly Rate<br>
-      * Monthly Rate<br>
-      * Distance from Home<br>
-      * OverTime<br> -->
+* We can predict, with our model, a members potential charges withint ~$2500
+* The main focus points to improve costs and sharing through the company are: <br>
+      * Smoking<br>
+         * Finding ways to incentivise non-smoking or finding ways to financially adjust to accomodate those members <br>
+      * BMI<br>
+         * Finding gym networks, companies and/or nutritionists to provide services to members at a discounted or no-cost rate<br>
+      * If all else fails<br>
+         * Reorganizing offered plan structure to account for increased costs and member counts
       
 
      
